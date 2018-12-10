@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;}
+/* -------Menu------- */
+header {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+#logo img {
+    width: 200%;
+    margin-top: 20%;
+}
+
+#logo,
+#main-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    margin-right: .5em;
+    list-style: none;
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+#main-nav a:hover {
+    color: black;
+}
+
+.active {
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+img#forsidebillede {
+    width: 100%;
+}
+
+#ugensopskrifter {
+    text-align: center;
+}
+
+img.vafler {
+    width: 60%;
+    display: block;
+        margin: 0 auto;
+
+}
+#tekst1{
+    background-color: #44CF6C; 
+    color: #fff;
+    margin-left: 0px; 
+    margin-right: 0px; 
+    padding-bottom: 8px; 
+    padding-left: 8px; 
+    padding-right: 8px; 
+    padding-top: 8px;
+}
+#VAFLERAFPLANTEFARS {
+    text-align: center;
+}
+
+img.plantedeller {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+#plantedeller{
+    text-align: center;
+}
+img.planteboller {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+#planteboller {
+    text-align: center;
+}
+#bæredygtighederfremtiden{
+    text-align: center;
+}
+img.gronerdetnyesort {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #586A6A;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 10%;
+    height: auto;
+    margin-top: 50%;
+}
+
+.footer-tekst {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+#footer-img {
+    text-align: right;
+    margin-top: 12%;
+    margin-right: 2.5%;
+}
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        color: black;
+        margin-left: 80%;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    /*HEADER NAV*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; /*remove this if you do not want the column layout whit logo above menu for medium size screens*/
+    }
+
+    #logo-burger {
+        margin: 0;
+
+    }
+
+    #logo img {
+    width: 40%;
+    margin-top: 10%;
+}
+    }
+img.gronerdetnyesort {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #586A6A;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 10%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.footer-tekst {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 2.5%;
+}
+
+#footer-img {
+    text-align: right;
+    margin-top: %;
+    margin-right: 2%;
+}
+
+    #main-nav {
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+
+    #main-nav a {
+        margin: 0 .5em;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    /*HEADER*/
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+#main-nav {
+    display: flex;
+    margin-right: .5em;
+    list-style: none;
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+#tekst1{
+    background-color: #44CF6C; 
+    color: #fff;
+    margin-left: 0px; 
+    margin-right: 0px; 
+    padding-bottom: 8px; 
+    padding-left: 8px; 
+    padding-right: 8px; 
+    padding-top: 8px;
+}
+}
+Chat afsluttet
+Skriv en besked ...
